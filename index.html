@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RinteriO</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/a4b6285254.js" crossorigin="anonymous"></script>
+    <!-- customizing my config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'title-color': '#212121',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .font{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+<body class="font">
+    
+    <!-- style the header section -->
+    <header class="container mx-auto mt-12 mb-36">
+
+       <!-- style the navbar -->
+        <nav class="flex justify-between">
+            <div class="flex">
+                <h3 class="border size-6 text-2xl">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </h3>
+                <h3 class="font-extrabold text-3xl text-title-color">Rinterio </h3>
+            </div>
+
+            <div class="">
+                <ul class="flex">
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#"> Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="flex items-center">
+                <h4><i class="fa-solid fa-search"></i></h4>
+                <h4><i class="fa-solid fa-cart-shopping"></i></h4>
+                <div class="flex">
+                    <button class="btn">Book Consult
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+</body>
+</html>
