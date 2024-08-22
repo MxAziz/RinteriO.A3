@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,65 +17,167 @@
     <!-- customizing my config -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'title-color': '#212121',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'title-color': '#212121',
+                        'description-color': '#494949',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <style>
-        .font{
+        .font {
             font-family: "Manrope", sans-serif;
         }
     </style>
 </head>
-<body class="font">
-    
+
+<body class="font ">
+
     <!-- style the header section -->
     <header class="container mx-auto mt-12 mb-36">
 
-       <!-- style the navbar -->
-        <nav class="flex justify-between">
-            <div class="flex">
-                <h3 class="border size-6 text-2xl">
+        <!-- style the navbar -->
+        <nav class="flex justify-between px-2 md:px-0">
+            <div class="flex gap-1">
+                <h3
+                    class="border size-8 flex justify-center items-center mt-1 text-lg font-thin rounded-full bg-[#ABEF5F]">
                     <i class="fa-solid fa-arrow-right -rotate-45"></i>
                 </h3>
                 <h3 class="font-extrabold text-3xl text-title-color">Rinterio </h3>
             </div>
 
-            <div class="">
-                <ul class="flex">
-                    <li><a href="#">Home </a></li>
-                    <li><a href="#"> Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
+            <div class="hidden  lg:block">
+                <ul class="flex space-x-12 mt-3 ">
+                    <li class="font-extrabold text-gray-700"><a href="#">Home </a></li>
+                    <li class="font-normal text-gray-500"><a href="#"> Services</a></li>
+                    <li class="font-normal text-gray-500"><a href="#">Portfolio</a></li>
+                    <li class="font-normal text-gray-500"><a href="#">Blogs</a></li>
+                    <li class="font-normal text-gray-500"><a href="#">Contact Us</a></li>
                 </ul>
 
             </div>
 
-            <div class="flex items-center">
-                <h4><i class="fa-solid fa-search"></i></h4>
-                <h4><i class="fa-solid fa-cart-shopping"></i></h4>
-                <div class="flex">
-                    <button class="btn">Book Consult
-                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                    </button>
+            <div class="flex space-x-6">
+
+                <div class="md:block md:flex items-center space-x-6 hidden">
+                    <h4 class="border-2 border-solid size-11 flex justify-center items-center rounded-full "><i
+                            class="fa-solid fa-search"></i></h4>
+                    <h4 class="border-2 border-solid size-11 flex justify-center items-center rounded-full "><i
+                            class="fa-solid fa-cart-shopping"></i></h4>
+                    <div class="flex">
+                        <button class="btn  bg-[#ABEF5F] hover:bg-lime-400 rounded-3xl">
+                            <h3 class="text-base font-extrabold">Book Consult</h3>
+                            <i
+                                class="fa-solid fa-arrow-right -rotate-45 flex justify-center items-center size-7 rounded-full text-sm text-white bg-black"></i>
+                        </button>
+                    </div>
                 </div>
+
+                <div class=" border-2 border-solid size-11 lg:hidden rounded-full flex justify-center items-center"><i
+                        class="fa-solid fa-bars"></i></div>
 
             </div>
         </nav>
 
+        <!-- style the banner -->
+        <section class="flex flex-col justify-center items-center mt-12">
+
+            <div class="">
+                <img src="./assets/banner.png" alt="">
+            </div>
+
+            <div class="text-center mt-6 lg:w-9/12 ">
+                <h1 class="text-6xl font-extrabold text-title-color">A barn house of this design has a striking
+                    appearance</h1>
+                <p class="text-base text-description-color font-medium mt-6 mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class=" flex mx-auto bg-lime-200 rounded-[32px] px-20 py-3 md:px-6 md:py-3">
+                    <h3 class="text-xl font-bold text-title-color mt-[6px] mr-1">View Details</h3>
+                    <h3
+                        class="border size-8 flex justify-center items-center mt-1 text-lg font-thin rounded-full bg-[#ABEF5F]">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </h3>
+                </button>
+            </div>
+        </section>
+
 
     </header>
 
-    <main></main>
+    <main>
+        <!-- design thoughtful and work process container -->
+         <section class=" bg-stone-100 relative">
+            <div class="absolute border-2 border-dashed left-32 top-4 py-6  hidden lg:block"><img src="./assets/Vector.png" alt="img"></div>
+
+            <!-- design thoughtful section -->
+             <section class="container mx-auto  lg:flex gap-9 mb-28 pt-24">
+                <!-- text and card content -->
+                 <div class="">
+                    <!-- text content -->
+                    <div class="space-y-6 text-center lg:text-left">
+                        <button class="flex btn bg-white rounded-3xl mx-auto lg:mx-0">
+                            <h4><i class="fa-solid fa-arrow-right"></i></h4>
+                            <h3 class="text-base font-bold text-description-color">About Us</h3>
+                        </button>
+                        <h3 class="text-5xl font-extrabold text-title-color">We design thoughtful, liveable spaces</h3>
+                        <p class="text-base font-medium text-description-color">The barn house captivates with its blend of rustic charm and 
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+                    </div>
+                    <!-- card content -->
+                     <div class="space-y-6">
+                        <!-- card 1 -->
+                         <div class="flex gap-6 mt-6 mx-2 lg:mx-0 rounded-2xl bg-white p-10">
+                            <img src="./assets/commercial.png" alt="">
+                            <div class="">
+                                <h4 class="text-2xl font-bold text-description-color">Commercial</h4>
+                                <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                         </div>
+                         <!-- card 2 -->
+                         <div class="flex gap-6 mt-6 mb-6 mx-2 lg:mx-0 rounded-2xl bg-white p-10">
+                            <img src="./assets/residential.png" alt="">
+                            <div class="">
+                                <h4 class="text-2xl font-bold text-description-color">Residential</h4>
+                                <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                         </div>
+                     </div>
+
+                 </div>
+                 <!-- img content -->
+                  <div class="">
+                    <img class="mx-auto mt-6 lg:mt-0" src="./assets/Rectangle.png" alt="">
+                  </div>
+
+             </section>
+
+
+             <!-- work process section -->
+              <section class="container mx-auto">
+                <!-- text content -->
+                <div class="space-y-6 text-center ">
+                    <button class="flex btn bg-white rounded-3xl mx-auto ">
+                        <h4><i class="fa-solid fa-arrow-right"></i></h4>
+                        <h3 class="text-base font-bold text-description-color">How we works</h3>
+                    </button>
+                    <h3 class="text-5xl font-extrabold text-title-color">Our Works Process</h3>
+                    <p class="text-base font-medium text-description-color">The barn house captivates with its blend of rustic charm and  modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+
+                </div>
+
+              </section>
+
+         </section>
+
+    </main>
 
     <footer></footer>
 </body>
+
 </html>
