@@ -109,13 +109,14 @@
 
     </header>
 
-    <main>
+    <main class="bg-stone-100 lg:bg-white">
+
         <!-- design thoughtful and work process container -->
          <section class=" bg-stone-100 relative">
             <div class="absolute border-2 border-dashed left-32 top-4 py-6  hidden lg:block"><img src="./assets/Vector.png" alt="img"></div>
 
             <!-- design thoughtful section -->
-             <section class="container mx-auto  lg:flex gap-9 mb-28 pt-24">
+             <section class="container mx-auto  lg:grid lg:grid-cols-2 gap-9 mb-28 pt-24">
                 <!-- text and card content -->
                  <div class="">
                     <!-- text content -->
@@ -152,7 +153,7 @@
                  </div>
                  <!-- img content -->
                   <div class="">
-                    <img class="mx-auto mt-6 lg:mt-0  h-full px-2 lg:px-0" src="./assets/Rectangle.png" alt="">
+                    <img class="mx-auto mt-6 lg:mt-0 object-cover px-2 lg:px-0" src="./assets/Rectangle.png" alt="">
                   </div>
 
              </section>
@@ -205,7 +206,7 @@
          <!-- latest portfolio section -->
           <section class="container mx-auto py-8 lg:py-24 bg-stone-100 lg:bg-white">
             <!-- text content -->
-            <div class="space-y-6 text-center  ">
+            <div class="space-y-6 text-center lg:w-3/5 mx-auto">
                 <button class="flex btn bg-lime-100 rounded-3xl mx-auto ">
                     <h4><i class="fa-solid fa-arrow-right"></i></h4>
                     <h3 class="text-base font-bold text-description-color">Explore our Latest works</h3>
@@ -215,15 +216,58 @@
             </div>
 
             <!-- portfolio card container -->
-             <div class="">
+             <div class="mt-4 lg:mt-8  lg:grid grid-cols-8 grid-rows-2 gap-6 ">
 
                 <!-- img and text card 1-->
-                 <div class=""></div>
+                 <div class="lg:flex gap-6 col-span-5 p-6 border-2 border-solid rounded-2xl bg-white">
+                    <img class="lg:border-dashed lg:border-2 w-full h-full lg:h[180px]" src="./assets/img1.png" alt="img">
+                    <div class="flex flex-col justify-between mt-4 lg:mt-0">
+                        <h3 class="text-2xl font-extrabold text-description-color">Commercial</h3>
+                        <p class="text-base font-medium text-[#737373]">Rinterio House offers premium commercial spaces designed for modern businesses. With sleek interiors and state-of-the-art facilities, it's the perfect environment for productivity and growth.</p>
+                        <button class=" flex rounded-[32px] ">
+                            <h3 class="text-xl font-bold text-title-color mt-[6px] mr-1">View Details</h3>
+                            <h3
+                                class="border size-8 flex justify-center items-center mt-1 text-lg font-thin rounded-full bg-[#ABEF5F]">
+                                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            </h3>
+                        </button>
+                    </div>
+                 </div>
                  <!-- img card 2 -->
-                  <div class=""></div>
-                  <!-- img card 3 -->
-                   <div class=""></div>
-                   <!-- img and text card 4 -->
+                  <div class="col-span-3 p-6 border-2 border-solid rounded-2xl bg-white  mt-4 mb-4 lg:mt-0 lg:mb-0">
+                    <img class=" lg:border-dashed lg:border-2 w-full h-full " src="./assets/img2.png" alt="">
+                  </div>
+                  <!-- img card 3 lg:hide-->
+                   <div class="lg:hidden p-6 border-2 border-solid rounded-2xl bg-white">
+                    <img class="w-full h-full" src="./assets/img5.png" alt="">
+                   </div>
+                   <!-- img card 4 sm:hide -->
+                    <div class="hidden lg:block col-span-2 p-6 border-2 border-solid rounded-2xl bg-white">
+                        <img class="lg:border-dashed lg:border-2 w-full h-full" src="./assets/img3.png" alt="">
+                    </div>
+                   <!-- img and text card 5 -->
+                   <div class="lg:flex gap-6 col-span-4 p-6 border-2 border-solid rounded-2xl bg-white mt-4 mb-4 lg:mt-0 lg:mb-0">
+                    <img class="lg:border-dashed lg:border-2 w-full h-full lg:h[180px]" src="./assets/img4.png" alt="img">
+                    <div class="flex flex-col justify-between mt-4 lg:mt-0">
+                        <h3 class="text-2xl font-extrabold text-description-color">Commercial</h3>
+                        <p class="text-base font-medium text-[#737373]">Discover Rinterio House's stylish commercial spaces, ideal for businesses seeking a dynamic environment with cutting-edge amenities and a professional atmosphere.</p>
+                        <button class=" flex rounded-[32px] ">
+                            <h3 class="text-xl font-bold text-title-color mt-[6px] mr-1">View Details</h3>
+                            <h3
+                                class="border size-8 flex justify-center items-center mt-1 text-lg font-thin rounded-full bg-[#ABEF5F]">
+                                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            </h3>
+                        </button>
+                    </div>
+                 </div>
+                    <!-- img card 6 lg:hide -->
+                     <div class="lg:hidden p-6 border-2 border-solid rounded-2xl bg-white">
+                        <img class="w-full h-full" src="./assets/img3.png" alt="">
+                     </div>
+                     <!-- img card 7 -->
+                      <div class="col-span-2 p-6 border-2 border-solid rounded-2xl bg-white mt-4 lg:mt-4">
+                        <img class="lg:border-dashed lg:border-2 w-full h-full" src="./assets/img5.png" alt="">
+                      </div>
 
              </div>
 
