@@ -40,9 +40,6 @@
             background-position: center;
             background-size: cover;
         }
-        .big-input{
-            text-align: ;
-        }
     </style>
 </head>
 
@@ -69,12 +66,11 @@
                     <li class="font-normal text-gray-500"><a href="#">Blogs</a></li>
                     <li class="font-normal text-gray-500"><a href="#">Contact Us</a></li>
                 </ul>
-
             </div>
 
             <div class="flex space-x-6">
 
-                <div class="md:block md:flex items-center space-x-6 hidden">
+                <div class=" md:flex items-center space-x-6 hidden">
                     <h4 class="border-2 border-solid size-11 flex justify-center items-center rounded-full "><i
                             class="fa-solid fa-search"></i></h4>
                     <h4 class="border-2 border-solid size-11 flex justify-center items-center rounded-full "><i
@@ -115,7 +111,6 @@
                 </button>
             </div>
         </section>
-
     </header>
 
     <main class="bg-stone-100 lg:bg-white">
@@ -136,7 +131,6 @@
                         </button>
                         <h3 class="text-5xl font-extrabold text-title-color">We design thoughtful, liveable spaces</h3>
                         <p class="text-base font-medium text-description-color">We design inviting spaces. The barn house blends rustic charm and modern style, featuring aged wood and sleek metal accents.</p>
-
                     </div>
                     <!-- card content -->
                      <div class="space-y-6">
@@ -284,7 +278,7 @@
           </section>
 
           <!-- discuss next project section -->
-           <section class="discuss-bg w-full h-full py-8 lg:py-24 mb-12">
+           <section class="discuss-bg w-full h-full py-8 lg:py-24 mb-3">
             <!-- all container -->
              <div class="w-11/12 lg:w-8/12 mx-auto ">
 
@@ -298,13 +292,13 @@
                     <p class="text-base font-medium text-description-color">Discover our newest projects showcasing innovative designs, cutting-edge technology, and creative solutions tailored to your business needs.</p>
                 </div>
                 <!-- input field -->
-                <div class="mt-8 grid  lg:grid-cols-2 grid-rows-5 gap-5 lg:gap-6">
+                <div class="mt-8 grid grid-cols-1 grid-rows-7  lg:grid-cols-2 lg:grid-rows-5 gap-5 lg:gap-6">
 
                     <input class="rounded-[64px] p-5 text-[#E9E9E9]" type="text" placeholder="First Name*">
                     <input class="rounded-[64px] p-5 text-[#E9E9E9]" type="text" placeholder="Last Name*">
                     <input class="rounded-[64px] p-5 text-[#E9E9E9]" type="number" placeholder="Phone Number*">
                     <input class="rounded-[64px] p-5 text-[#E9E9E9]" type="email" placeholder="Email Number*">
-                    <input class="rounded-[32px] p-5 text-[#E9E9E9] row-span-3 col-span-2 big-input" type="text" placeholder="Write your message here">
+                    <input class="rounded-[32px] p-5 text-[#E9E9E9] row-span-3 lg:row-span-3 lg:col-span-2 " type="text" placeholder="Write your message here">
                 </div>
                 <!-- button -->
                 <div class="flex mt-6 lg:mt-8">
@@ -317,10 +311,40 @@
 
              </div>
            </section>
-
     </main>
 
-    <footer></footer>
+    <!-- style the footer section -->
+    <footer class="bg-[#1C1C1C] py-24">
+        <div class="w-11/12 lg:w-8/12  mx-auto text-center">
+
+            <!-- text content -->
+            <div class="flex justify-center gap-1 mx-auto mb-4 ">
+                <h3
+                class=" size-8 flex justify-center items-center mt-1 text-lg font-thin rounded-full bg-[#ABEF5F]">
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </h3>
+                <h3 class="font-extrabold text-3xl text-white">Rinterio </h3>
+            </div>
+            <p class="text-base font-medium text-[#737373]">The barn house combines rustic charm with modern elegance, showcasing weathered wood, sleek metal finishes, and a harmonious mix of traditional and contemporary design elements.</p>
+            <!-- nav content -->
+            <div class=" my-8 lg:my-12">
+                <ul class="lg:flex lg:justify-between lg:space-x-12 space-y-8 lg:space-y-0 mt-3 ">
+                    <li class="font-extrabold text-[#E9E9E9]"><a href="#">Home </a></li>
+                    <li class="font-normal text-[#E9E9E9]"><a href="#">Services</a></li>
+                    <li class="font-normal text-[#E9E9E9]"><a href="#">Portfolio</a></li>
+                    <li class="font-normal text-[#E9E9E9]"><a href="#">Blogs</a></li>
+                    <li class="font-normal text-[#E9E9E9]"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- button -->
+            <button class="btn  bg-[#ABEF5F] hover:bg-lime-400 rounded-3xl border-none">
+                <h3 class="text-base font-extrabold">Book Consult</h3>
+                <i
+                    class="fa-solid fa-arrow-right -rotate-45 flex justify-center items-center size-7 rounded-full text-sm text-white bg-black"></i>
+            </button>
+            
+        </div>
+    </footer>
 </body>
 
 </html>
